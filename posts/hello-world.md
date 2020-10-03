@@ -1,7 +1,7 @@
 ---
 title: Hello world
 date: 2020-09-27T08:33:31.282Z
-author: Jane Doe
+author: Rudy Montoya
 summary: A summary of this beautiful post
 tags:
   - post

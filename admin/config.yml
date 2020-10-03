@@ -3,7 +3,7 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 
 # Uncomment for local dev to start 'npx netlify-cms-proxy-server'
-# local_backend: true 
+local_backend: true 
 # Uncomment below to enable drafts
 publish_mode: editorial_workflow
 

@@ -28,6 +28,7 @@ body {
 
 main {
 	max-width: 37.5em;
+	margin: 0 auto;
 }
 
 p,
@@ -112,12 +113,10 @@ header nav ul :first-child {
 
 header nav li {
 	display: inline-block;
-	margin: 0 .25em;
+	margin: 0 .5em;
 }
-
-header nav li a {
-	padding: .25em .5em;
-	border-radius: .25em;
+header nav li:first-child {
+	margin-left: 0;
 }
 
 header nav li a[href]:not(:hover) {
@@ -133,7 +132,7 @@ article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
 	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--secondary);
+	border-bottom: 1px solid var(--primary);
 }
 
 main > section > article > * {
@@ -152,8 +151,7 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
 	line-height: 2em;
 	height: 2em;
-  border: 1px solid var(--secondary);
-	background-color: var(--secondary);
+  border: 1px solid var(--primary);
 	color: var(--primary);
   border-radius: .25em;
   text-decoration: none;
@@ -161,8 +159,7 @@ a[rel="tag"]:visited {
 }
 
 a[rel="tag"]:hover {
-	border: 1px solid var(--primary);
-	background-color: var(--primary);
+	border: 1px solid var(--secondary);
 	color: var(--secondary);
 }
 
@@ -198,8 +195,12 @@ textarea {
 button {
 	border: 1px solid var(--primary);
 	background-color: var(--primary);
-	color: var(--secondary);
+	color: #fff;
 	cursor: pointer;
+}
+button:hover {
+	background-color: #fff;
+	color: var(--primary);
 }
 
 @media screen and (min-width:768px) {

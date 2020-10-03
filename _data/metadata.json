@@ -1,4 +1,5 @@
 {
-  "title": "Eleventy Netlify Boilerplate",
-  "url": "https://eleventy-netlify-boilerplate.netlify.app"
+  "title": "moretaste boilerplate",
+  "url": "https://moretaste.netlify.app",
+  "metadesc": "Template for building simple and fast websites with the 11ty static site generator, with deployment to Netlify"
 }

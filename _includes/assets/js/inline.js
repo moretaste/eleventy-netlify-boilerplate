@@ -7,3 +7,5 @@ if (window.netlifyIdentity) {
     }
   });
 }
+
+console.log(Math.random())
