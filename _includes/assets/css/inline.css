@@ -1,7 +1,10 @@
 :root {
-	--primary: blue;
-	--secondary: white;
-	--background: #FFF0EB;
+	--primary: #0092ae;
+	--primarydark: #007c94;
+	--secondary: #e63312;
+	--secondarydark: #b8290e;
+	--textcolor: #311b07;
+	--background: #fefefe;
 }
 
 *, *:before, *:after {
@@ -16,6 +19,7 @@ body {
 }
 
 body {
+	color: var(--textcolor);
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
@@ -34,7 +38,12 @@ code {
 
 a[href],
 a[href]:visited {
-	color: var(--primary);
+	color: var(--secondary);
+}
+
+a[href]:hover,
+a[href]:visited:hover {
+	color: var(--secondarydark);
 }
 
 a[href]:not(:hover) {
@@ -85,6 +94,10 @@ header > em {
 	margin: .67em 0;
 	font-weight: bold;
 	font-style: normal;
+}
+header > em > a[href],
+header > em > a[href]:visited {
+		color: var(--primary);
 }
 
 /* Header Nav */
