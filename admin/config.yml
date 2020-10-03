@@ -2,8 +2,10 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
+# Uncomment for local dev to start 'npx netlify-cms-proxy-server'
+# local_backend: true 
 # Uncomment below to enable drafts
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 
 media_folder: "static/img" # Media files will be stored in the repo under images/uploads
 
@@ -30,7 +32,7 @@ collections:
   - name: "pages"
     label: "Page"
     folder: "pages"
-    create: false # Change to true to allow editors to create new pages
+    create: true # Change to true to allow editors to create new pages
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -43,6 +45,15 @@ collections:
           - { label: "Key", name: "key", widget: "string" }
           - { label: "Order", name: "order", widget: "number", default: 0 }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "SEO"
+        name: "seoMeta"
+        widget: "object"
+        summary: '{{fields.metaTitle}}'
+        collapsed: true
+        fields:
+          - { label: "Meta title", name: "metaTitle", widget: "string", required: false}
+          - { label: "Meta description", name: "metaDesc", widget: "string", required: false}
+          - { label: "Meta keywords", name: "metaKey", widget: "string", required: false}
   # Authors
   - name: "authors"
     label: "Author"
