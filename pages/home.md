@@ -6,6 +6,8 @@ permalink: /
 eleventyNavigation:
   key: Home
   order: 0
+seoMeta:
+  metaTitle: Home meta title
 ---
 # Welcome
 
